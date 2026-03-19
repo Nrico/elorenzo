@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #000000;
+  --color-background-light: #f7f7f7;
+  --color-background-dark: #191919;
+}
+
+@layer base {
+  body {
+    @apply bg-background-light text-slate-900 antialiased;
+  }
+}
+
+.tracking-tighter-extra {
+  letter-spacing: -0.05em;
+}
+
+.leading-tight-extra {
+  line-height: 0.85;
+}
+
+
+/* Journal Rich Text Overrides */
+.journal-text-block p { margin-bottom: 1.5em; }
+.journal-text-block h2 { font-size: 2rem; font-weight: 900; text-transform: uppercase; margin-top: 2em; margin-bottom: 0.5em; letter-spacing: -0.05em; }
+.journal-text-block h3 { font-size: 1.5rem; font-weight: 900; text-transform: uppercase; margin-top: 1.5em; margin-bottom: 0.5em; }
+.journal-text-block a { color: #d97706; text-decoration: none; }
+.journal-text-block a:hover { text-decoration: underline; }
+.journal-text-block ul, .journal-text-block ol { margin-bottom: 1.5em; padding-left: 1.5em; }
+.journal-text-block li { margin-bottom: 0.5em; }
+.journal-text-block strong { font-weight: 700; }
+.journal-text-block blockquote { border-left: 4px solid #f59e0b; padding-left: 1em; font-style: italic; margin-bottom: 1.5em; }
+
